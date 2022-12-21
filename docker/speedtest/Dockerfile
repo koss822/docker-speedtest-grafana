@@ -1,4 +1,4 @@
-FROM debian:10 AS get-speedtest
+FROM amd64/debian:10 AS get-speedtest
 
 RUN apt-get update && apt-get install gnupg1 apt-transport-https dirmngr lsb-release -y
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 379CE192D401AB61
