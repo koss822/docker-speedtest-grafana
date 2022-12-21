@@ -32,7 +32,7 @@ jobs:
           file: ./docker/speedtest/Dockerfile
           platforms: linux/amd64
           push: true
-          tags: frdmn/speedtest-grafana:latest
+          tags: krab55/speedtest-grafana:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
