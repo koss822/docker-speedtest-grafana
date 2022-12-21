@@ -1,4 +1,4 @@
-name: Multi-arch build and push to hub
+name: amd64 build and push to hub
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
         with:
           context: ./docker/speedtest
           file: ./docker/speedtest/Dockerfile
-          platforms: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7
+          platforms: linux/amd64
           push: true
           tags: frdmn/speedtest-grafana:latest
       -
